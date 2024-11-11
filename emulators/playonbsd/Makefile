@@ -21,7 +21,9 @@ RUN_DEPENDS=	7z:archivers/7-zip \
 		sudo:security/sudo \
 		wget:ftp/wget \
 		xdg-open:devel/xdg-utils \
-		xterm:x11/xterm
+		xterm:x11/xterm \
+                ${PYTHON_PKGNAMEPREFIX}natsort>0:devel/py-natsort@${PY_FLAVOR} \
+                magick:graphics/ImageMagick7
 
 USES=		perl5 python:run shebangfix
 USE_GITHUB=	yes
